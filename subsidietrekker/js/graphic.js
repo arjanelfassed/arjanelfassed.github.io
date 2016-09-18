@@ -7,15 +7,12 @@ var key = "1AdMg3ueZsuYIFtJ9y4JeQlUBgIjKFekYM0An8bUYDxU";
 	//punctuation or numbers in your column name
 //"title" is the column name you want to appear in the published table
 var columns = [ 
-    { "data": "datum", "title": "Datum" },
-    { "data": "nummer", "title": "Nummer" },
-    { "data": "omschrijving", "title": "Omschrijving" },
-  	{ "data": "gebruik", "title": "Gebruik" },
-  	{ "data": "type", "title": "Type" },
-  	{ "data": "catdt", "title": "D/T" },
-  	{ "data": "herkomst", "title": "Herkomst" },
-  	{ "data": "bestemming", "title": "Bestemming" },
-	{ "data": "waarde", "title": "Waarde" }];
+    { "data": "Overheid", "title": "Overheid" },
+    { "data": "Regeling", "title": "Regeling" },
+    { "data": "Ontvanger", "title": "Ontvanger" },
+  	{ "data": "Beleid", "title": "Beleid" },
+  	{ "data": "Realisatie", "title": "Realisatie" },
+  	{ "data": "Jaar", "title": "Jaar" }];
     
     
 $(document).ready(function() {
