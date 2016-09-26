@@ -1,21 +1,20 @@
 //Edit 'key' and 'columns' to connect your spreadsheet
 
 //enter google sheets key here
-var key = "1AdMg3ueZsuYIFtJ9y4JeQlUBgIjKFekYM0An8bUYDxU";
+var key = "14pylIrfy90j647myLTHGL2xDWYcQNsnid799kPRZ0Y4";
 
 //"data" refers to the column name with no spaces and no capitals
 	//punctuation or numbers in your column name
 //"title" is the column name you want to appear in the published table
 var columns = [ 
-    { "data": "datum", "title": "Datum" },
+    { "data": "naam", "title": "Ziekenhuis" },
     { "data": "nummer", "title": "Nummer" },
-    { "data": "omschrijving", "title": "Omschrijving" },
-  	{ "data": "gebruik", "title": "Gebruik" },
-  	{ "data": "type", "title": "Type" },
-  	{ "data": "catdt", "title": "D/T" },
-  	{ "data": "herkomst", "title": "Herkomst" },
-  	{ "data": "bestemming", "title": "Bestemming" },
-	{ "data": "waarde", "title": "Waarde" }];
+    { "data": "soort", "title": "Type" },
+  	{ "data": "2016", "title": "2016" },
+  	{ "data": "2015", "title": "2015" },
+  	{ "data": "2014", "title": "2014" },
+  	{ "data": "2013", "title": "2013" },
+  	{ "data": "2012", "title": "2012" }];
     
     
 $(document).ready(function() {
