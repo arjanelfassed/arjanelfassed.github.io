@@ -10,11 +10,11 @@ var columns = [
     { "data": "naam", "title": "Ziekenhuis" },
     { "data": "nummer", "title": "Nummer" },
     { "data": "soort", "title": "Type" },
-  	{ "data": "2016", "title": "2016" },
-  	{ "data": "2015", "title": "2015" },
-  	{ "data": "2014", "title": "2014" },
-  	{ "data": "2013", "title": "2013" },
-  	{ "data": "2012", "title": "2012" }];
+  	{ "data": "zestien", "title": "2016" },
+  	{ "data": "vijftien", "title": "2015" },
+  	{ "data": "veertien", "title": "2014" },
+  	{ "data": "dertien", "title": "2013" },
+  	{ "data": "twaalf", "title": "2012" }];
     
     
 $(document).ready(function() {
