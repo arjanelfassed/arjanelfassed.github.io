@@ -30,19 +30,20 @@
 
 <!-- DataTables 2 -->    
 <script type="text/javascript">
-    $(document).ready(function() {
-        $('#example').dataTable( {
-            "processing": true,
-            "serverSide": true,
-            "ajax": '//search.enrise.com/nos.nl/search?q=verkiezingen',
-            "columns": [
-                {"name": "type", "searchable": false},
-                {"name": "title", "searchable": false},
-                {"name": "tags", "searchable": true},
-                {"name": "created", "searchable": false},
-            ]
-        } );
-    } );
+    
+$('#example').dataTable( {
+  "ajax": {
+    "url": "//search.enrise.com/nos.nl/search?q=verkiezingen",
+    "dataSrc": function ( json ) {
+      for ( var i=0, ien=json.length ; i<ien ; i++ ) {
+        json[i][0] = '<a href="/message/'+json[i][0]+'>View message</a>';
+      }
+      return json;
+    }
+  }
+} );    
+    
+
     </script>
 
 </head>
