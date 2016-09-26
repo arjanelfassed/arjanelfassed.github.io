@@ -26,11 +26,20 @@
 <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
   
 <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
+    
 
+<!-- DataTables 2 -->    
 <script type="text/javascript">
-    $(document).ready(function() {
+
+$(document).ready(function() {
     $('#example').DataTable( {
-        "ajax": 'https://raw.githubusercontent.com/arjanelfassed/arjanelfassed.github.io/master/osn2/data/object.txt'
+        "ajax": "data/objects.txt",
+        "columns": [
+            { "data": "type" },
+            { "data": "title" },
+            { "data": "tags" },
+            { "data": "created" },
+        ]
     } );
 } );
     </script>
@@ -42,22 +51,18 @@
 <table id="example" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
-                <th>Overheid</th>
-                <th>Regeling</th>
-                <th>Ontvanger</th>
-                <th>Beleid</th>
-                <th>Realisatie</th>
-                <th>Jaar</th>
+                <th>Type</th>
+                <th>Titel</th>
+                <th>Tags</th>
+                <th>Datum</th>
             </tr>
         </thead>
         <tfoot>
             <tr>
-                <th>Overheid</th>
-                <th>Regeling</th>
-                <th>Ontvanger</th>
-                <th>Beleid</th>
-                <th>Realisatie</th>
-                <th>Jaar</th>
+                <th>Type</th>
+                <th>Titel</th>
+                <th>Tags</th>
+                <th>Datum</th>
             </tr>
         </tfoot>
     </table>
