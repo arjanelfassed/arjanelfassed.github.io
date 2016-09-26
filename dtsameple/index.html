@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Algemene Politieke Beschouwingen 2016 tekst analyse</title>
+    <title>DATATABLES</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -30,5 +30,42 @@
 
 </head>
 
+    $(document).ready(function() {
+    $('#example').DataTable( {
+        "ajax": "data/objects.txt",
+        "columns": [
+            { "data": "name" },
+            { "data": "position" },
+            { "data": "office" },
+            { "data": "extn" },
+            { "data": "start_date" },
+            { "data": "salary" }
+        ]
+    } );
+} );
+
 <body>
 <div class="container">
+
+    <table id="example" class="display" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Extn.</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Extn.</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </tfoot>
+    </table>
