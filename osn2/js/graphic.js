@@ -44,7 +44,7 @@ $(document).ready(function() {
         	"responsive": 'true',
             "data": data,
             "columns": columns, 
-            "order":[[ 0, 'desc' ]], //order on 1st column
+            "order":[[ 0, 'asc' ]], //order on 1st column
             "pagingType": 'full_numbers' //page numbers
 			//uncomment these options to simplify your table
 			//"paging": false,
