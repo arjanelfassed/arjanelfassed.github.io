@@ -277,7 +277,7 @@ function bubbleChart() {
                   d.name +
                   '</span><br/>' +
                   '<span class="name">Amount: </span><span class="value">' +
-                  addCommas(d.value) +
+                  (d.value) +
                   '</span><br/>' +
                   '<span class="name">Year: </span><span class="value">' +
                   d.year +
