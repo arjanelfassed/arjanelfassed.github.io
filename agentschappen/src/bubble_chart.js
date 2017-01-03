@@ -19,25 +19,25 @@ function bubbleChart() {
   var center = { x: width / 2, y: height / 2 };
 
   var yearCenters = {
-    2009: { x: width / 7, y: height / 3 },
-    2010: { x: width / 7, y: height / 2 },
-    2011: { x: width / 7, y: height / 4 },
-    2012: { x: width / 7, y: height / 5 },
-    2013: { x: width / 7, y: height / 2 },
-    2014: { x: width / 7, y: height / 3 },
-    2015: { x: width / 7, y: height / 4 }
+    2009: { x: width / 2, y: height / 2 },
+    2010: { x: width / 2, y: height / 2 },
+    2011: { x: width / 2, y: height / 2 },
+    2012: { x: width / 2, y: height / 2 },
+    2013: { x: width / 2, y: height / 2 },
+    2014: { x: width / 2, y: height / 2 },
+    2015: { x: width / 2, y: height / 2 }
     
   };
 
   // X locations of the year titles.
   var yearsTitleX = {
-    2009: 20,
+    2009: 160,
     2010: width 40,
     2011: width 60,
     2012: width /2
     2013: width -60
     2014: width -40
-    2015: width -20
+    2015: width -160
   };
 
   // @v4 strength to apply to the position forces
