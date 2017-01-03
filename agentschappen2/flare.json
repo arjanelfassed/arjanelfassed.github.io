@@ -1,0 +1,734 @@
+{
+  "skill": "flare",
+  "children": [
+    {
+      "skill": "departement",
+      "children": [
+        {
+          "skill": "agentschap",
+          "children": [
+            {
+              "name": "jaar",
+              "level": "omzet"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "AZ",
+      "children": [
+        {
+          "skill": "DPC",
+          "children": [
+            {
+              "name": 2013,
+              "level": 22561000
+            },
+            {
+              "name": 2014,
+              "level": 24632000
+            },
+            {
+              "name": 2015,
+              "level": 25214000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "BuZa",
+      "children": [
+        {
+          "skill": "CBI",
+          "children": [
+            {
+              "name": 2013,
+              "level": 25520000
+            },
+            {
+              "name": 2014,
+              "level": 19564000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "BZK",
+      "children": [
+        {
+          "skill": "BPR",
+          "children": [
+            {
+              "name": 2013,
+              "level": 19468000
+            },
+            {
+              "name": 2014,
+              "level": 25272000
+            }
+          ]
+        },
+        {
+          "skill": "DHC",
+          "children": [
+            {
+              "name": 2013,
+              "level": 13300000
+            },
+            {
+              "name": 2014,
+              "level": 12182000
+            },
+            {
+              "name": 2015,
+              "level": 11416000
+            }
+          ]
+        },
+        {
+          "skill": "FMH",
+          "children": [
+            {
+              "name": 2013,
+              "level": 30645000
+            },
+            {
+              "name": 2014,
+              "level": 20456000
+            },
+            {
+              "name": 2015,
+              "level": 24716000
+            }
+          ]
+        },
+        {
+          "skill": "Logius",
+          "children": [
+            {
+              "name": 2013,
+              "level": 40590000
+            },
+            {
+              "name": 2014,
+              "level": 58071000
+            },
+            {
+              "name": 2015,
+              "level": 88599000
+            }
+          ]
+        },
+        {
+          "skill": "P-Direkt",
+          "children": [
+            {
+              "name": 2013,
+              "level": 5126000
+            },
+            {
+              "name": 2014,
+              "level": 5283000
+            },
+            {
+              "name": 2015,
+              "level": 69644000
+            }
+          ]
+        },
+        {
+          "skill": "RGD",
+          "children": [
+            {
+              "name": 2013,
+              "level": 22060000
+            },
+            {
+              "name": 2014,
+              "level": 16672000
+            },
+            {
+              "name": 2015,
+              "level": 15172000
+            }
+          ]
+        },
+        {
+          "skill": "RVOB",
+          "children": [
+            {
+              "name": 2013,
+              "level": 21888000
+            },
+            {
+              "name": 2014,
+              "level": 23141000
+            },
+            {
+              "name": 2015,
+              "level": 21746000
+            }
+          ]
+        },
+        {
+          "skill": "SSC-ICT",
+          "children": [
+            {
+              "name": 2013,
+              "level": 35663000
+            },
+            {
+              "name": 2014,
+              "level": 25533000
+            },
+            {
+              "name": 2015,
+              "level": 44494000
+            }
+          ]
+        },
+        {
+          "skill": "UBR",
+          "children": [
+            {
+              "name": 2013,
+              "level": 33194000
+            },
+            {
+              "name": 2014,
+              "level": 36598000
+            },
+            {
+              "name": 2015,
+              "level": 35171000
+            }
+          ]
+        },
+        {
+          "skill": "GDI",
+          "children": [
+            {
+              "name": 2014,
+              "level": 2240000
+            }
+          ]
+        },
+        {
+          "skill": "RVIG",
+          "children": [
+            {
+              "name": 2015,
+              "level": 30128000
+            }
+          ]
+        },
+        {
+          "skill": "DVD",
+          "children": [
+            {
+              "name": 2015,
+              "level": 1125000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "DEF",
+      "children": [
+        {
+          "skill": "DTO",
+          "children": [
+            {
+              "name": 2013,
+              "level": 270638000
+            },
+            {
+              "name": 2014,
+              "level": 296897000
+            },
+            {
+              "name": 2015,
+              "level": 265237000
+            }
+          ]
+        },
+        {
+          "skill": "DVD",
+          "children": [
+            {
+              "name": 2013,
+              "level": 215641000
+            },
+            {
+              "name": 2014,
+              "level": 216318000
+            }
+          ]
+        },
+        {
+          "skill": "Paresto",
+          "children": [
+            {
+              "name": 2013,
+              "level": 77479000
+            },
+            {
+              "name": 2014,
+              "level": 77629000
+            },
+            {
+              "name": 2015,
+              "level": 70592000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "EZ",
+      "children": [
+        {
+          "skill": "AGNL",
+          "children": [
+            {
+              "name": 2013,
+              "level": 149833000
+            }
+          ]
+        },
+        {
+          "skill": "AT",
+          "children": [
+            {
+              "name": 2013,
+              "level": 11622000
+            },
+            {
+              "name": 2014,
+              "level": 11217000
+            },
+            {
+              "name": 2015,
+              "level": 12514000
+            }
+          ]
+        },
+        {
+          "skill": "Dictu",
+          "children": [
+            {
+              "name": 2013,
+              "level": 156097000
+            },
+            {
+              "name": 2014,
+              "level": 180997000
+            },
+            {
+              "name": 2015,
+              "level": 210944000
+            }
+          ]
+        },
+        {
+          "skill": "DLG",
+          "children": [
+            {
+              "name": 2013,
+              "level": 78926000
+            },
+            {
+              "name": 2014,
+              "level": 55762000
+            }
+          ]
+        },
+        {
+          "skill": "DR",
+          "children": [
+            {
+              "name": 2013,
+              "level": 147995000
+            }
+          ]
+        },
+        {
+          "skill": "NVWA",
+          "children": [
+            {
+              "name": 2013,
+              "level": 129522000
+            },
+            {
+              "name": 2014,
+              "level": 119113000
+            },
+            {
+              "name": 2015,
+              "level": 128935000
+            }
+          ]
+        },
+        {
+          "skill": "RVO",
+          "children": [
+            {
+              "name": 2014,
+              "level": 303448000
+            },
+            {
+              "name": 2015,
+              "level": 314859000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "FIN",
+      "children": [
+        {
+          "skill": "DRZ",
+          "children": [
+            {
+              "name": 2013,
+              "level": 64000
+            },
+            {
+              "name": 2014,
+              "level": 885000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "IenM",
+      "children": [
+        {
+          "skill": "ILT",
+          "children": [
+            {
+              "name": 2013,
+              "level": 132231000
+            },
+            {
+              "name": 2014,
+              "level": 132137000
+            },
+            {
+              "name": 2015,
+              "level": 132694000
+            }
+          ]
+        },
+        {
+          "skill": "KNMI",
+          "children": [
+            {
+              "name": 2013,
+              "level": 38571000
+            },
+            {
+              "name": 2014,
+              "level": 39587000
+            },
+            {
+              "name": 2015,
+              "level": 46668000
+            }
+          ]
+        },
+        {
+          "skill": "NEA",
+          "children": [
+            {
+              "name": 2013,
+              "level": 7370000
+            },
+            {
+              "name": 2014,
+              "level": 7063000
+            },
+            {
+              "name": 2015,
+              "level": 7622000
+            }
+          ]
+        },
+        {
+          "skill": "RWS",
+          "children": [
+            {
+              "name": 2013,
+              "level": 2270042000
+            },
+            {
+              "name": 2014,
+              "level": 2190896000
+            },
+            {
+              "name": 2015,
+              "level": 2224488000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "OCW",
+      "children": [
+        {
+          "skill": "DUO",
+          "children": [
+            {
+              "name": 2013,
+              "level": 258405000
+            },
+            {
+              "name": 2014,
+              "level": 257007000
+            },
+            {
+              "name": 2015,
+              "level": 273502000
+            }
+          ]
+        },
+        {
+          "skill": "NA",
+          "children": [
+            {
+              "name": 2013,
+              "level": 28335000
+            },
+            {
+              "name": 2014,
+              "level": 34966000
+            },
+            {
+              "name": 2015,
+              "level": 42045000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "SZW",
+      "children": [
+        {
+          "skill": "ASZW",
+          "children": [
+            {
+              "name": 2013,
+              "level": 12978000
+            },
+            {
+              "name": 2014,
+              "level": 16883000
+            },
+            {
+              "name": 2015,
+              "level": 13729000
+            }
+          ]
+        },
+        {
+          "skill": "IWI",
+          "children": [
+            {
+              "name": 2013,
+              "level": 9041000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "VenJ",
+      "children": [
+        {
+          "skill": "CJIB",
+          "children": [
+            {
+              "name": 2013,
+              "level": 103358000
+            },
+            {
+              "name": 2014,
+              "level": 98973000
+            },
+            {
+              "name": 2015,
+              "level": 109099000
+            }
+          ]
+        },
+        {
+          "skill": "DJI",
+          "children": [
+            {
+              "name": 2013,
+              "level": 2313666000
+            },
+            {
+              "name": 2014,
+              "level": 2287904000
+            },
+            {
+              "name": 2015,
+              "level": 2167396000
+            }
+          ]
+        },
+        {
+          "skill": "GDI",
+          "children": [
+            {
+              "name": 2013,
+              "level": 62721000
+            }
+          ]
+        },
+        {
+          "skill": "IND",
+          "children": [
+            {
+              "name": 2013,
+              "level": 315432000
+            },
+            {
+              "name": 2014,
+              "level": 322125000
+            },
+            {
+              "name": 2015,
+              "level": 352235000
+            }
+          ]
+        },
+        {
+          "skill": "Justis",
+          "children": [
+            {
+              "name": 2013,
+              "level": 17619000
+            },
+            {
+              "name": 2014,
+              "level": 15269000
+            },
+            {
+              "name": 2015,
+              "level": 14469000
+            }
+          ]
+        },
+        {
+          "skill": "NFI",
+          "children": [
+            {
+              "name": 2013,
+              "level": 68273000
+            },
+            {
+              "name": 2014,
+              "level": 67123000
+            },
+            {
+              "name": 2015,
+              "level": 71525000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "VWS",
+      "children": [
+        {
+          "skill": "ACBG",
+          "children": [
+            {
+              "name": 2013,
+              "level": 203000
+            },
+            {
+              "name": 2014,
+              "level": 215000
+            },
+            {
+              "name": 2015,
+              "level": 192000
+            }
+          ]
+        },
+        {
+          "skill": "Almata",
+          "children": [
+            {
+              "name": 2013,
+              "level": 10183000
+            },
+            {
+              "name": 2014,
+              "level": 4964000
+            }
+          ]
+        },
+        {
+          "skill": "CIBG",
+          "children": [
+            {
+              "name": 2013,
+              "level": 34174000
+            },
+            {
+              "name": 2014,
+              "level": 22326000
+            },
+            {
+              "name": 2015,
+              "level": 22860000
+            }
+          ]
+        },
+        {
+          "skill": "Lindenhorst",
+          "children": [
+            {
+              "name": 2013,
+              "level": 25155000
+            },
+            {
+              "name": 2014,
+              "level": 51867000
+            }
+          ]
+        },
+        {
+          "skill": "RIVM",
+          "children": [
+            {
+              "name": 2013,
+              "level": 151730000
+            },
+            {
+              "name": 2014,
+              "level": 159026000
+            },
+            {
+              "name": 2015,
+              "level": 245963000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
