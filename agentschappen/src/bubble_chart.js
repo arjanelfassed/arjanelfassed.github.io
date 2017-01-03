@@ -19,13 +19,13 @@ function bubbleChart() {
   var center = { x: width / 2, y: height / 2 };
 
   var yearCenters = {
-    2009: { x: width / 3, y: height / 2 },
-    2010: { x: width / 2, y: height / 2 },
-    2011: { x: 2 * width / 3, y: height / 2 },
-    2012: { x: width / 3, y: height / 2 },
-    2013: { x: width / 2, y: height / 2 },
-    2014: { x: 2 * width / 3, y: height / 2 },
-    2015: { x: width / 3, y: height / 2 }
+    2009: { x: width / 7, y: height / 3 },
+    2010: { x: width / 7, y: height / 2 },
+    2011: { x: width / 7, y: height / 4 },
+    2012: { x: width / 7, y: height / 5 },
+    2013: { x: width / 7, y: height / 2 },
+    2014: { x: width / 7, y: height / 3 },
+    2015: { x: width / 7, y: height / 4 }
     
   };
 
@@ -285,7 +285,7 @@ function bubbleChart() {
     var content = '<span class="name">Title: </span><span class="value">' +
                   d.name +
                   '</span><br/>' +
-                  '<span class="name">Amount: </span><span class="value">$' +
+                  '<span class="name">Amount: </span><span class="value">' +
                   addCommas(d.value) +
                   '</span><br/>' +
                   '<span class="name">Year: </span><span class="value">' +
