@@ -187,7 +187,11 @@
       years_x = {
         "2009": 160,
         "2010": this.width / 2,
-        "2011": this.width - 160
+        "2011": this.width / 2
+        "2012": this.width / 2,
+        "2013": this.width / 2,
+        "2014": this.width / 2,
+        "2015": this.width - 160
       };
       years_data = d3.keys(years_x);
       years = this.vis.selectAll(".years").data(years_data);
