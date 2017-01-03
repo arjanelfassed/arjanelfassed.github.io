@@ -1,11 +1,11 @@
 {
-  "skill": "flare",
+  "name": "flare",
   "children": [
     {
-      "skill": "departement",
+      "name": "departement",
       "children": [
         {
-          "skill": "agentschap",
+          "name": "agentschap",
           "children": [
             {
               "name": "jaar",
@@ -16,10 +16,10 @@
       ]
     },
     {
-      "skill": "AZ",
+      "name": "AZ",
       "children": [
         {
-          "skill": "DPC",
+          "name": "DPC",
           "children": [
             {
               "name": 2013,
@@ -38,10 +38,10 @@
       ]
     },
     {
-      "skill": "BuZa",
+      "name": "BuZa",
       "children": [
         {
-          "skill": "CBI",
+          "name": "CBI",
           "children": [
             {
               "name": 2013,
@@ -56,10 +56,10 @@
       ]
     },
     {
-      "skill": "BZK",
+      "name": "BZK",
       "children": [
         {
-          "skill": "BPR",
+          "name": "BPR",
           "children": [
             {
               "name": 2013,
@@ -72,7 +72,7 @@
           ]
         },
         {
-          "skill": "DHC",
+          "name": "DHC",
           "children": [
             {
               "name": 2013,
@@ -89,7 +89,7 @@
           ]
         },
         {
-          "skill": "FMH",
+          "name": "FMH",
           "children": [
             {
               "name": 2013,
@@ -106,7 +106,7 @@
           ]
         },
         {
-          "skill": "Logius",
+          "name": "Logius",
           "children": [
             {
               "name": 2013,
@@ -123,7 +123,7 @@
           ]
         },
         {
-          "skill": "P-Direkt",
+          "name": "P-Direkt",
           "children": [
             {
               "name": 2013,
@@ -140,7 +140,7 @@
           ]
         },
         {
-          "skill": "RGD",
+          "name": "RGD",
           "children": [
             {
               "name": 2013,
@@ -157,7 +157,7 @@
           ]
         },
         {
-          "skill": "RVOB",
+          "name": "RVOB",
           "children": [
             {
               "name": 2013,
@@ -174,7 +174,7 @@
           ]
         },
         {
-          "skill": "SSC-ICT",
+          "name": "SSC-ICT",
           "children": [
             {
               "name": 2013,
@@ -191,7 +191,7 @@
           ]
         },
         {
-          "skill": "UBR",
+          "name": "UBR",
           "children": [
             {
               "name": 2013,
@@ -208,7 +208,7 @@
           ]
         },
         {
-          "skill": "GDI",
+          "name": "GDI",
           "children": [
             {
               "name": 2014,
@@ -217,7 +217,7 @@
           ]
         },
         {
-          "skill": "RVIG",
+          "name": "RVIG",
           "children": [
             {
               "name": 2015,
@@ -226,7 +226,7 @@
           ]
         },
         {
-          "skill": "DVD",
+          "name": "DVD",
           "children": [
             {
               "name": 2015,
@@ -237,10 +237,10 @@
       ]
     },
     {
-      "skill": "DEF",
+      "name": "DEF",
       "children": [
         {
-          "skill": "DTO",
+          "name": "DTO",
           "children": [
             {
               "name": 2013,
@@ -257,7 +257,7 @@
           ]
         },
         {
-          "skill": "DVD",
+          "name": "DVD",
           "children": [
             {
               "name": 2013,
@@ -270,7 +270,7 @@
           ]
         },
         {
-          "skill": "Paresto",
+          "name": "Paresto",
           "children": [
             {
               "name": 2013,
@@ -289,10 +289,10 @@
       ]
     },
     {
-      "skill": "EZ",
+      "name": "EZ",
       "children": [
         {
-          "skill": "AGNL",
+          "name": "AGNL",
           "children": [
             {
               "name": 2013,
@@ -301,7 +301,7 @@
           ]
         },
         {
-          "skill": "AT",
+          "name": "AT",
           "children": [
             {
               "name": 2013,
@@ -318,7 +318,7 @@
           ]
         },
         {
-          "skill": "Dictu",
+          "name": "Dictu",
           "children": [
             {
               "name": 2013,
@@ -335,7 +335,7 @@
           ]
         },
         {
-          "skill": "DLG",
+          "name": "DLG",
           "children": [
             {
               "name": 2013,
@@ -348,7 +348,7 @@
           ]
         },
         {
-          "skill": "DR",
+          "name": "DR",
           "children": [
             {
               "name": 2013,
@@ -357,7 +357,7 @@
           ]
         },
         {
-          "skill": "NVWA",
+          "name": "NVWA",
           "children": [
             {
               "name": 2013,
@@ -374,7 +374,7 @@
           ]
         },
         {
-          "skill": "RVO",
+          "name": "RVO",
           "children": [
             {
               "name": 2014,
@@ -389,10 +389,10 @@
       ]
     },
     {
-      "skill": "FIN",
+      "name": "FIN",
       "children": [
         {
-          "skill": "DRZ",
+          "name": "DRZ",
           "children": [
             {
               "name": 2013,
@@ -407,10 +407,10 @@
       ]
     },
     {
-      "skill": "IenM",
+      "name": "IenM",
       "children": [
         {
-          "skill": "ILT",
+          "name": "ILT",
           "children": [
             {
               "name": 2013,
@@ -427,7 +427,7 @@
           ]
         },
         {
-          "skill": "KNMI",
+          "name": "KNMI",
           "children": [
             {
               "name": 2013,
@@ -444,7 +444,7 @@
           ]
         },
         {
-          "skill": "NEA",
+          "name": "NEA",
           "children": [
             {
               "name": 2013,
@@ -461,7 +461,7 @@
           ]
         },
         {
-          "skill": "RWS",
+          "name": "RWS",
           "children": [
             {
               "name": 2013,
@@ -480,10 +480,10 @@
       ]
     },
     {
-      "skill": "OCW",
+      "name": "OCW",
       "children": [
         {
-          "skill": "DUO",
+          "name": "DUO",
           "children": [
             {
               "name": 2013,
@@ -500,7 +500,7 @@
           ]
         },
         {
-          "skill": "NA",
+          "name": "NA",
           "children": [
             {
               "name": 2013,
@@ -519,10 +519,10 @@
       ]
     },
     {
-      "skill": "SZW",
+      "name": "SZW",
       "children": [
         {
-          "skill": "ASZW",
+          "name": "ASZW",
           "children": [
             {
               "name": 2013,
@@ -539,7 +539,7 @@
           ]
         },
         {
-          "skill": "IWI",
+          "name": "IWI",
           "children": [
             {
               "name": 2013,
@@ -550,10 +550,10 @@
       ]
     },
     {
-      "skill": "VenJ",
+      "name": "VenJ",
       "children": [
         {
-          "skill": "CJIB",
+          "name": "CJIB",
           "children": [
             {
               "name": 2013,
@@ -570,7 +570,7 @@
           ]
         },
         {
-          "skill": "DJI",
+          "name": "DJI",
           "children": [
             {
               "name": 2013,
@@ -587,7 +587,7 @@
           ]
         },
         {
-          "skill": "GDI",
+          "name": "GDI",
           "children": [
             {
               "name": 2013,
@@ -596,7 +596,7 @@
           ]
         },
         {
-          "skill": "IND",
+          "name": "IND",
           "children": [
             {
               "name": 2013,
@@ -613,7 +613,7 @@
           ]
         },
         {
-          "skill": "Justis",
+          "name": "Justis",
           "children": [
             {
               "name": 2013,
@@ -630,7 +630,7 @@
           ]
         },
         {
-          "skill": "NFI",
+          "name": "NFI",
           "children": [
             {
               "name": 2013,
@@ -649,10 +649,10 @@
       ]
     },
     {
-      "skill": "VWS",
+      "name": "VWS",
       "children": [
         {
-          "skill": "ACBG",
+          "name": "ACBG",
           "children": [
             {
               "name": 2013,
@@ -669,7 +669,7 @@
           ]
         },
         {
-          "skill": "Almata",
+          "name": "Almata",
           "children": [
             {
               "name": 2013,
@@ -682,7 +682,7 @@
           ]
         },
         {
-          "skill": "CIBG",
+          "name": "CIBG",
           "children": [
             {
               "name": 2013,
@@ -699,7 +699,7 @@
           ]
         },
         {
-          "skill": "Lindenhorst",
+          "name": "Lindenhorst",
           "children": [
             {
               "name": 2013,
@@ -712,7 +712,7 @@
           ]
         },
         {
-          "skill": "RIVM",
+          "name": "RIVM",
           "children": [
             {
               "name": 2013,
