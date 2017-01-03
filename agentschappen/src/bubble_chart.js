@@ -19,16 +19,16 @@ function bubbleChart() {
   var center = { x: width / 2, y: height / 2 };
 
   var yearCenters = {
-    2008: { x: width / 3, y: height / 2 },
-    2009: { x: width / 2, y: height / 2 },
-    2010: { x: 2 * width / 3, y: height / 2 }
+    2013: { x: width / 3, y: height / 2 },
+    2014: { x: width / 2, y: height / 2 },
+    2015: { x: 2 * width / 3, y: height / 2 }
   };
 
   // X locations of the year titles.
   var yearsTitleX = {
-    2008: 160,
-    2009: width / 2,
-    2010: width - 160
+    2013: 160,
+    2014: width / 2,
+    2015: width - 160
   };
 
   // @v4 strength to apply to the position forces
@@ -74,10 +74,10 @@ function bubbleChart() {
   // Nice looking colors - no reason to buck the trend
   // @v4 scales now have a flattened naming scheme
   var fillColor = d3.scaleOrdinal()
-    .domain(['low', 'medium', 'high'])
-    .range(['#d84b2a', '#beccae', '#7aa25c']);
-
-
+    .domain(['AZ', 'BuZa', 'BZK', 'DEF', 'EZ', 'FIN', 'IenM', 'OCW', 'SZW', 'VenJ', 'VWS'])
+    .range(['#d84b2a', '#beccae', '#7aa25c', '#ff5733', '#33b5ff', '#11347e', '#201d5a', '#531980', '#681980', '#801957', '#801941']);
+  
+  
   /*
    * This data manipulation function takes the raw data from
    * the CSV file and converts it into an array of node objects.
@@ -276,7 +276,7 @@ function bubbleChart() {
     var content = '<span class="name">Title: </span><span class="value">' +
                   d.name +
                   '</span><br/>' +
-                  '<span class="name">Amount: </span><span class="value">$' +
+                  '<span class="name">Amount: </span><span class="value">' +
                   addCommas(d.value) +
                   '</span><br/>' +
                   '<span class="name">Year: </span><span class="value">' +
