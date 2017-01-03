@@ -1,60 +1,99 @@
+
+Open
+A sunburst is similar to the treemap, except it uses a radial layout. The root node of the tree is at the center, with leaves on the circumference. The area (or angle, depending on implementation) of each arc corresponds to its value. Sunburst design by John Stasko. Data courtesy Jeff Heer.
+
+index.html#
+
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
 
-circle {
-  fill: rgb(31, 119, 180);
-  fill-opacity: .25;
-  stroke: rgb(31, 119, 180);
-  stroke-width: 1px;
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto;
+  position: relative;
+  width: 960px;
 }
 
-.leaf circle {
-  fill: #ff7f0e;
-  fill-opacity: 1;
-}
-
-text {
-  font: 10px sans-serif;
-  text-anchor: middle;
+form {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 </style>
-<svg width="960" height="960"></svg>
-<script src="https://d3js.org/d3.v4.min.js"></script>
+<form>
+  <label><input type="radio" name="mode" value="size"> Size</label>
+  <label><input type="radio" name="mode" value="count" checked> Count</label>
+</form>
+<script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
-var svg = d3.select("svg"),
-    diameter = +svg.attr("width"),
-    g = svg.append("g").attr("transform", "translate(2,2)"),
-    format = d3.format(",d");
+var width = 960,
+    height = 700,
+    radius = Math.min(width, height) / 2,
+    color = d3.scale.category20c();
 
-var pack = d3.pack()
-    .size([diameter - 4, diameter - 4]);
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    .attr("transform", "translate(" + width / 2 + "," + height * .52 + ")");
+
+var partition = d3.layout.partition()
+    .sort(null)
+    .size([2 * Math.PI, radius * radius])
+    .value(function(d) { return 1; });
+
+var arc = d3.svg.arc()
+    .startAngle(function(d) { return d.x; })
+    .endAngle(function(d) { return d.x + d.dx; })
+    .innerRadius(function(d) { return Math.sqrt(d.y); })
+    .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); });
 
 d3.json("flare.json", function(error, root) {
   if (error) throw error;
 
-  root = d3.hierarchy(root)
-      .sum(function(d) { return d.size; })
-      .sort(function(a, b) { return b.value - a.value; });
+  var path = svg.datum(root).selectAll("path")
+      .data(partition.nodes)
+    .enter().append("path")
+      .attr("display", function(d) { return d.depth ? null : "none"; }) // hide inner ring
+      .attr("d", arc)
+      .style("stroke", "#fff")
+      .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
+      .style("fill-rule", "evenodd")
+      .each(stash);
 
-  var node = g.selectAll(".node")
-    .data(pack(root).descendants())
-    .enter().append("g")
-      .attr("class", function(d) { return d.children ? "node" : "leaf node"; })
-      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+  d3.selectAll("input").on("change", function change() {
+    var value = this.value === "count"
+        ? function() { return 1; }
+        : function(d) { return d.size; };
 
-  node.append("title")
-      .text(function(d) { return d.data.name + "\n" + format(d.value); });
-
-  node.append("circle")
-      .attr("r", function(d) { return d.r; });
-
-  node.filter(function(d) { return !d.children; }).append("text")
-      .attr("dy", "0.3em")
-      .text(function(d) { return d.data.name.substring(0, d.r / 3); });
+    path
+        .data(partition.value(value).nodes)
+      .transition()
+        .duration(1500)
+        .attrTween("d", arcTween);
+  });
 });
 
-</script>
+// Stash the old values for transition.
+function stash(d) {
+  d.x0 = d.x;
+  d.dx0 = d.dx;
+}
 
+// Interpolate the arcs in data space.
+function arcTween(a) {
+  var i = d3.interpolate({x: a.x0, dx: a.dx0}, a);
+  return function(t) {
+    var b = i(t);
+    a.x0 = b.x;
+    a.dx0 = b.dx;
+    return arc(b);
+  };
+}
+
+d3.select(self.frameElement).style("height", height + "px");
+
+</script>
