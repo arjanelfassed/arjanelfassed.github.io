@@ -128,7 +128,7 @@ d3.tsv("zorgkosten.tsv", function(error, data) {
   var path = svg.selectAll(".company").append("path")
       .attr("class", "line")
       .attr("d", function(d) { return line(d.values); })
-      .style("stroke", function(d) { if (d.name == "Airbus") 
+      .style("stroke", function(d) { if (d.name == "Zvw") 
                                         {return "rgb(000,255,000)"}
                                       else {return "#000";}
                                          });
