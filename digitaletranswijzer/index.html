@@ -1,86 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <title>Digitale transparantie wijzer</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset='UTF-8'>
+	
+	<title>Tweede Kamer Open Data Wijzer</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!--[if !IE]><!-->
+	<style>
+	
+	/* 
+	Max width before this PARTICULAR table gets nasty
+	This query will take effect for any screen smaller than 760px
+	and also iPads specifically.
+	*/
+	@media 
+	only screen and (max-width: 760px),
+	(min-device-width: 768px) and (max-device-width: 1024px)  {
+	
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		tr { border: 1px solid #ccc; }
+		
+		td { 
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 50%; 
+		}
+		
+		td:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+		
+		/*
+		Label the data
+		*/
+		td:nth-of-type(1):before { content: "Fractie"; }
+		td:nth-of-type(2):before { content: "VVD"; }
+		td:nth-of-type(3):before { content: "PvdA"; }
+		td:nth-of-type(4):before { content: "SP"; }
+		td:nth-of-type(5):before { content: "CDA"; }
+		td:nth-of-type(6):before { content: "PVV"; }
+		td:nth-of-type(7):before { content: "D66"; }
+		td:nth-of-type(8):before { content: "CU"; }
+		td:nth-of-type(9):before { content: "GL"; }
+		td:nth-of-type(10):before { content: "PvdD"; }
+		td:nth-of-type(11):before { content: "GrKO"; }
+		td:nth-of-type(11):before { content: "GrBK"; }
+		td:nth-of-type(11):before { content: "50PLUS"; }
 
-    <!--JS LIBRARIES-->
-    <!--JQUERY-->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    <!--BOOTSTRAP JS-->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    
-   
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	}
+	
+	
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		body { 
+			padding: 0; 
+			margin: 0; 
+			width: 320px; }
+		}
+	
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		body { 
+			width: 495px; 
+		}
+	}
+	
+	</style>
+	<!--<![endif]-->
 
 </head>
 
 <body>
-<style>
-@media only screen and (max-width: 800px) {
-	
-	/* Force table to not be like tables anymore */
-	#no-more-tables table, 
-	#no-more-tables thead, 
-	#no-more-tables tbody, 
-	#no-more-tables th, 
-	#no-more-tables td, 
-	#no-more-tables tr { 
-		display: block; 
-	}
- 
-	/* Hide table headers (but not display: none;, for accessibility) */
-	#no-more-tables thead tr { 
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
- 
-	#no-more-tables tr { border: 1px solid #ccc; }
- 
-	#no-more-tables td { 
-		/* Behave  like a "row" */
-		border: none;
-		border-bottom: 1px solid #eee; 
-		position: relative;
-		padding-left: 50%; 
-		white-space: normal;
-		text-align:left;
-	}
- 
-	#no-more-tables td:before { 
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
-		white-space: nowrap;
-		text-align:left;
-		font-weight: bold;
-	}
- 
-	/*
-	Label the data
-	*/
-	#no-more-tables td:before { content: attr(data-title); }
-}
-</style>
+
+	<div id="page-wrap">
+
+	<h1>Verkiezingen</h1>
+    
+	<table>
+		<thead>
 		
-<table><thead>
+<table><thead>  <tr>
 				<th class='text '>Fractie</th>
 				<th class=' '>VVD</th>
 				<th class=' '>PvdA</th>
@@ -95,7 +121,7 @@
 				<th class=' '>GrKO</th>
 				<th class=' '>GrBK</th>
 				<th class=' '>50PLUS</th>
-				
+				</tr>
 			</thead>
 			<tbody>
 				
@@ -196,5 +222,10 @@
 			
 			</tbody>
 		</table>
+		
+	
+	</div>
+		
 </body>
+
 </html>
