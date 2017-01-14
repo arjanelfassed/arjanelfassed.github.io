@@ -89,7 +89,7 @@
             this.$dropdownGroup.hide();
         }
 
-        // Event binding
+        // Event bindingstyle="background-color: red;"
         // -------------------------
 
         // on orientchange, resize and displayAllBtn-click
@@ -111,7 +111,7 @@
         stickyTableHeader: true,
         fixedNavbar: '.navbar-fixed-top',  // Is there a fixed navbar? The stickyTableHeader needs to know about it!
         addDisplayAllBtn: true, // should it have a display-all button?
-        addFocusBtn: true,  // should it have a focus button?
+        addFocusBtn: false,  // should it have a focus button?
         focusBtnIcon: 'glyphicon glyphicon-screenshot',
         mainContainer: window,
         i18n: {
