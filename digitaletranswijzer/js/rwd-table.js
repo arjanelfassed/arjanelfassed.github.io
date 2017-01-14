@@ -116,8 +116,8 @@
         mainContainer: window,
         i18n: {
             focus     : 'Focus',
-            display   : 'Display',
-            displayAll: 'Display all'
+            display   : 'Filter',
+            displayAll: 'Toon alles'
         }
     };
 
