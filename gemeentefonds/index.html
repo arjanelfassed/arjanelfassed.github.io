@@ -14,14 +14,26 @@ var chart = new Chartist.Line('.ct-chart', {
 [14776171, 15617124, 17012273, 17809026, 17879310, 18046749, 17844738, 18271271, 16860551, 17852693],
 [7025268, 6976598, 8311818, 7316745, 7340370, 7224442, 7592759, 8097376, 6128856, 6115829],
 [null, null, null, null, null, null, null, null, 10339155, 9351029]
-  ]
-}, {
-  showArea: true
-  fullWidth: true,
-  chartPadding: {
-    right: 10
-  },
-  low: 0
+  ]}, {
+  low: 0,
+  showArea: true,
+  showPoint: false,
+  fullWidth: true
+});
+
+chart.on('draw', function(data) {
+  if(data.type === 'line' || data.type === 'area') {
+    data.element.animate({
+      d: {
+        begin: 2000 * data.index,
+        dur: 2000,
+        from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
+        to: data.path.clone().stringify(),
+        easing: Chartist.Svg.Easing.easeOutQuint
+      }
+    });
+  }
 });
 </script>
 </html>
+
