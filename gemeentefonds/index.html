@@ -16,15 +16,15 @@ var chart = new Chartist.Line('.ct-chart', {
 [{meta: 'Specifieke uitkeringen', value: 7025268},{meta: 'Specifieke uitkeringen', value: 6976598},{meta: 'Specifieke uitkeringen', value: 8311818},{meta: 'Specifieke uitkeringen', value: 7316745},{meta: 'Specifieke uitkeringen', value: 7340370},{meta: 'Specifieke uitkeringen', value: 7224442},{meta: 'Specifieke uitkeringen', value: 7592759},{meta: 'Specifieke uitkeringen', value: 8097376},{meta: 'Specifieke uitkeringen', value: 6128856},{meta: 'Specifieke uitkeringen', value: 6115829}],
 [{meta: 'Integratie-uitkering Sociaal domein', value: null},{meta: 'Integratie-uitkering Sociaal domein', value: null},{meta: 'Integratie-uitkering Sociaal domein', value: null},{meta: 'Integratie-uitkering Sociaal domein', value: null},{meta: 'Integratie-uitkering Sociaal domein', value: null},{meta: 'Integratie-uitkering Sociaal domein', value: null},{meta: 'Integratie-uitkering Sociaal domein', value: null},{meta: 'Integratie-uitkering Sociaal domein', value: null},{meta: 'Integratie-uitkering Sociaal domein', value: 10339155},{meta: 'Integratie-uitkering Sociaal domein', value: 9351029}]]
 
-   ]}, {
+}, {
   low: 0,
-  high: 8750000
-  fullWidth: true
-  showArea: true,
+  high: 8,
+  fullWidth: true,
   plugins: [
-      Chartist.plugins.tooltip()
+    Chartist.plugins.tooltip()
   ]
 });
+
 
 chart.on('draw', function(data) {
   if(data.type === 'line' || data.type === 'area') {
