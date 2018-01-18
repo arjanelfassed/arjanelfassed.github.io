@@ -13,12 +13,16 @@
     <!--JS LIBRARIES-->
     <!--JQUERY-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--FEEDEK-->
+    <script type="text/javascript" src="js/FeedEk.js"></script>
+    <!--MOMENT-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment-with-langs.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 
     <!--BOOTSTRAP JS-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    
    
-    <!-- Latest compiled and minified CSS -->
+   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -34,15 +38,16 @@
 <blockquote>
 <h4>Gemeentenieuws</h4>
 </blockquote>
+
+<div id="divRss"></div>
+
+<script>
+$('#divRss').FeedEk({
+FeedUrl:'http://www.rssmix.com/u/8270881/rss.xml'
+});
+</script>
+
     
-<script src="//rss.bloople.net/?url=http%3A%2F%2Fwww.rssmix.com%2Fu%2F8270108%2Frss.xml&showtitle=false&type=js"></script>
-
-
-
-
-<iframe src="https://feed.mikle.com/widget/v2/58622/" height="1785px" width="100%" class="fw-iframe" scrolling="no" frameborder="0"></iframe>
-    <br></br>
-
 
 
 <center><address><a href="http://openstate.eu" target="_blank"><strong>Open State Foundation</strong></address>
@@ -55,6 +60,12 @@
                         </li>
                         <li><a href="https://www.facebook.com/openstatefoundation" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook fa-2x"></i></a></li>
                         </ul></center>
+    
+   
+<iframe src="https://feed.mikle.com/widget/v2/58622/" height="1785px" width="100%" class="fw-iframe" scrolling="no" frameborder="0"></iframe>
+    <br></br>
+
+
 
 </body>
 </html>
