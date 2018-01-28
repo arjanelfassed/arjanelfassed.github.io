@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Untitled Document</title>
+</head>
+
+<body>
+
+<script>
+function process()
+{
+var url="https://twitter.com/search?f=tweets&q=" + document.getElementById("url").value+"%20list%3AOpenStateEU%2FGR2018&src=typd";
+location.href=url;
+return false;
+}
+
+</script>
+<form onSubmit="return process();">
+Zoekterm: <input type="text" name="url" id="url"> <input type="submit" value="zoek">
+</form>
+<p></p><p>
+
+ 
+<a class="twitter-timeline" href="https://twitter.com/OpenStateEU/lists/politiek-lokaal?ref_src=twsrc%5Etfw">A Twitter List by OpenStateEU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+ 
+ 
+</body>
+
+</html>
