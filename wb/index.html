@@ -13,35 +13,36 @@
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/autofill/2.2.2/css/autoFill.bootstrap4.min.css">
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/autofill/2.2.2/js/dataTables.autoFill.min.js"></script>
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/autofill/2.2.2/js/autoFill.bootstrap4.min.js"></script>
-
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
 
 
 
     <title>Wereldbank</title>
-  </head>
-  <body>
-    <h1>Wereldbank</h1>
+    
+    <script>
 
-<script type="text/javascript" charset="utf8">    
-$('#myTable').DataTable( {
-    ajax: {
-        url: 'https://finances.worldbank.org/resource/45tv-a6qy.json?supplier_country=Netherlands'
-    },
-    columns: [
-        { data: 'as_of_date' },
-        { data: 'borrower_contract_reference_number' },
-        { data: 'borrower_country' },
-        { data: 'borrower_country_code' }    
-    ]
+$(document).ready(function() {
+    $('#example').DataTable( {
+        "ajax": 'https://finances.worldbank.org/resource/45tv-a6qy.json',
+        dataSrc: ''
+        },
+        columns: [   
+        { data: fiscal_year },
+        { data: major_sector },
+        { data: procurement_category },
+        { data: procurement_method }
+  ]
 } );
 </script>
+    
+  </head>
+  <body>
 
-<table id="myTable" class="display" style="width:100%">
+
+
+
+<table id="example" class="display" style="width:100%">
         <thead>
             <tr>
                 <th>Datum</th>
