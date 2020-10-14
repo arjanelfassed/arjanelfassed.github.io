@@ -1,0 +1,114 @@
+[
+  {
+    "vanaf risiconiveau": "Er op uit",
+    "waakzaam": "Geen beperkingen",
+    "zorgelijk": "Geen beperkingen",
+    "ernstig": "Maximaal 4 inclusief jezelf",
+    "zeer ernstig": "Maximaal 4 inclusief jezelf",
+    "lockdown": "Maximaal 4 inclusief jezelf"
+  },
+  {
+    "vanaf risiconiveau": "Thuisbezoek familie en vrienden",
+    "waakzaam": "Geen beperkingen",
+    "zorgelijk": "Maximaal 6 van een ander huishouden",
+    "ernstig": "Maximaal 3 van een ander huishouden",
+    "zeer ernstig": "Maximaal 3 van een ander huishouden Maximaal 1 bezoek per dag",
+    "lockdown": "Blijf thuis"
+  },
+  {
+    "vanaf risiconiveau": "Samenkomsten",
+    "waakzaam": "Reservering verplicht bij evenementen",
+    "zorgelijk": "Met reservering en een vaste zitplaats: Maximaal 60 binnen Maximaal 80 buiten",
+    "ernstig": "Met reservering en een vaste zitplaats: Maximaal 30 binnen Maximaal 40 buiten",
+    "zeer ernstig": "Bijeenkomsten beperkt toegestaan met reservering en vaste zitplaats: Geen evenementen Maximaal 30 binnen",
+    "lockdown": "Geen bijeenkomsten Geen evenementen"
+  },
+  {
+    "vanaf risiconiveau": "Huwelijksvoltrekkingen",
+    "waakzaam": "Geen beperkingen",
+    "zorgelijk": "Maximaal 60 binnen Maximaal 80 buiten",
+    "ernstig": "Maximaal 30",
+    "zeer ernstig": "Maximaal 30",
+    "lockdown": "Maximaal 30"
+  },
+  {
+    "vanaf risiconiveau": "Verpleeghuizen",
+    "waakzaam": "Maatregelen afhankelijk van de situatie op de locatie. Bijvoorbeeld reservering van bezoek, een gezondheidscheck, gebruik van mondneusmaskers, en het beperken van bezoek",
+    "zorgelijk": "Maatregelen afhankelijk van de situatie op de locatie. Bijvoorbeeld reservering van bezoek, een gezondheidscheck, gebruik van mondneusmaskers, en het beperken van bezoek",
+    "ernstig": "Maatregelen afhankelijk van de situatie op de locatie. Bijvoorbeeld reservering van bezoek, een gezondheidscheck, gebruik van mondneusmaskers, en het beperken van bezoek",
+    "zeer ernstig": "Maatregelen afhankelijk van de situatie op de locatie. Bijvoorbeeld reservering van bezoek, een gezondheidscheck, gebruik van mondneusmaskers, en het beperken van bezoek",
+    "lockdown": "Maatregelen afhankelijk van de situatie op de locatie. Bijvoorbeeld reservering van bezoek, een gezondheidscheck, gebruik van mondneusmaskers, en het beperken van bezoek"
+  },
+  {
+    "vanaf risiconiveau": "Horeca",
+    "waakzaam": "Reservering, vaste zitplaats en checkgesprek verplicht",
+    "zorgelijk": "Horeca open tot 01:00 Laatste inloop 00:00",
+    "ernstig": "Horeca open tot 22:00 Laatste inloop 21:00",
+    "zeer ernstig": "Horeca gesloten",
+    "lockdown": "Horeca gesloten"
+  },
+  {
+    "vanaf risiconiveau": "Sport",
+    "waakzaam": "Geen beperkingen",
+    "zorgelijk": "Geen beperkingen",
+    "ernstig": "Geen publiek bij (amateur)-wedstrijden",
+    "zeer ernstig": "Geen sportwedstrijden Bij trainingen maximaal 4 personen op 1,5 meter afstand (uitzondering geldt voor jongeren tot en met 17 jaar) Sluiting kleedkamers en sportkantines",
+    "lockdown": "Verbod op sportactiviteiten binnen Buiten maximaal 2 personen op 1,5 meter afstand Sluiting kleedkamers en sportkantines"
+  },
+  {
+    "vanaf risiconiveau": "Binnenlandse reizen",
+    "waakzaam": "Geen beperkingen",
+    "zorgelijk": "Beperk reisbewegingen",
+    "ernstig": "Beperk reisbewegingen",
+    "zeer ernstig": "Beperk reisbewegingen",
+    "lockdown": "Niet noodzakelijke reizen in binnen- en buitenland vermijden"
+  },
+  {
+    "vanaf risiconiveau": "OV",
+    "waakzaam": "Mondkapje verplicht",
+    "zorgelijk": "Mondkapje verplicht",
+    "ernstig": "Mondkapje verplicht",
+    "zeer ernstig": "Mondkapje verplicht",
+    "lockdown": "Mondkapje verplicht"
+  },
+  {
+    "vanaf risiconiveau": "Uitvaart",
+    "waakzaam": "Maximaal 100 binnen en 250 buiten",
+    "zorgelijk": "",
+    "ernstig": "Maximaal 100 binnen en 250 buiten",
+    "zeer ernstig": "Maximaal 100 binnen en 250 buiten",
+    "lockdown": "Maximaal 100 binnen en 250 buiten"
+  },
+  {
+    "vanaf risiconiveau": "Onderwijs",
+    "waakzaam": "Basisscholen en voortgezet onderwijs blijven open. Fysiek onderwijs in mbo, hbo en wo waar basisregels gevolgd kunnen worden.",
+    "zorgelijk": "Basisscholen en voortgezet onderwijs blijven open. Fysiek onderwijs in mbo, hbo en wo waar basisregels gevolgd kunnen worden.",
+    "ernstig": "Basisscholen en voortgezet onderwijs blijven open. Fysiek onderwijs in mbo, hbo en wo waar basisregels gevolgd kunnen worden.",
+    "zeer ernstig": "Basisscholen en voortgezet onderwijs blijven open. Fysiek onderwijs in mbo, hbo en wo waar basisregels gevolgd kunnen worden.",
+    "lockdown": "Mbo, hbo en wo alleen via online onderwijs"
+  },
+  {
+    "vanaf risiconiveau": "Werk",
+    "waakzaam": "Werk thuis, tenzij het niet anders kan",
+    "zorgelijk": "Werk thuis, tenzij het niet anders kan",
+    "ernstig": "Werk thuis, tenzij het niet anders kan",
+    "zeer ernstig": "Werk thuis, tenzij het niet anders kan",
+    "lockdown": "Werk thuis, tenzij het niet anders kan"
+  },
+  {
+    "vanaf risiconiveau": "Winkels",
+    "waakzaam": "Draag een mondkapje",
+    "zorgelijk": "Volg aanwijzingen winkels Winkeltijden voor ouderen",
+    "ernstig": "Geen koopavonden behalve voor verkoop levensmiddelen Winkeltijden voor ouderen",
+    "zeer ernstig": "Geen koopavonden behalve voor verkoop levensmiddelen Winkeltijden voor ouderen",
+    "lockdown": "Geen koopavonden behalve voor verkoop levensmiddelen Winkeltijden voor ouderen"
+  },
+  {
+    "vanaf risiconiveau": "Alcohol en softdrugs",
+    "waakzaam": "Geen beperkingen",
+    "zorgelijk": "Geen beperkingen",
+    "ernstig": "Geen beperkingen",
+    "zeer ernstig": "Na 20:00 uur: Verbod op verkoop alcohol en so\u001fdrugs Verbod op bezit / nu\u001digen alcohol en so\u001fdrugs in openbare ruimte",
+    "lockdown": "Na 20:00 uur: Verbod op verkoop alcohol en so\u001fdrugs Verbod op bezit / nu\u001digen alcohol en so\u001fdrugs in openbare ruimte"
+  }
+]
